@@ -32,7 +32,7 @@ function calculateCost() {
         total = 75 * rounds;
     }
 
-    //concatinate total and send output to page
+    //concatinate total and send output to page to display
     sTotal = 'Total: $' + total.toFixed(0);
     document.getElementById("total").textContent=sTotal
 
