@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Golf with Eliza";
+}
+<h1>@ViewData["Title"]</h1>
+
+<head>
+    <title>Calculate Price of a Round of Golf with Eliza</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="calculator.js"></script>
+
+</head>
+<body>
+
+    <input type="text" width="200" value="9 holes:$50" readonly>
+
+    <input type="text" width="200" value="18 holes: $75 " readonly>
+
+    <br />
+    <br />
+    <br />
+
+
+
+    <label>How many holes would you like to play per round?</label>
+    <input type="number" id="holes"/>
+    <br />
+    <br />
+    <label>How many rounds would you like to play?</label>
+    <input type="number" id="rounds" />
+    <br />
+    <br />
+    <button id="calcButton" onclick="calculateCost()">Calculate Cost</button>
+    <output id="total"></output>
+
+
+
+</body>
